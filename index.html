@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+ 
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+
+    <script src="js/Tree.js"></script>
+    <script src="js/sidebar.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+  </div>
+
+  <div id="main">
+    <h1>The  Tree</h1>
+    <button class="openbtn" onclick="openNav()">&#9776; Control Panel</button>
+
+
+  <div id="Canvas" class="Canvas"> </div>
+
+  </body>
+
+<!-- 
+  ##############
+  CONTROL PANEL
+  ##############
+  
+ -->
+  <div id="mySidebar" class="sidebar" >
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div data-role="main" class="ui-content">
+      <button id="Refresh" onclick="refresh()" > Refresh</button>
+
+  
+      <h1 for="slider-fill">Branch Size</h1>
+      <input type="range" name="branch-size" id="branch-size" value="100" min="0"
+        max="200" data-highlight="true"
+        onchange="refresh()">
+  
+      <h1 for="slider-fill">Branching Factor</h1>
+      <input type="range" name="branch-factor" id="branch-factor" value="75"
+        min="50" max="100" data-highlight="true">
+      
+
+      <div data-role="rangeslider">
+        <h1 id="angle">Angle:</h1>
+        <input type="range" name="min-angle" id="min-angle" value="-20" min="-90"
+          max="90" data-popup-enabled="true"
+          onchange="refresh()">
+        <input type="range" name="max-angle" id="max-angle" value="50" min="-90"
+          max="90" data-popup-enabled="true"
+          onchange="refresh()">
+      </div>
+    
+      <div data-role="rangeslider">
+        <h1 id="leaf">Leaf Shape:</h1>
+        <input type="range" name="min-leaf" id="min-leaf" value="45" min="45"
+          max="250" data-popup-enabled="true"
+          onchange="refresh()">
+        <input type="range" name="max-leaf" id="max-leaf" value="135" min="45"
+          max="250" data-popup-enabled="true"
+          onchange="refresh()">
+      </div>
+
+      <h1>Leaves Color</h1>
+      <div class="colorPicker" align="center" ></div>
+  
+      <p class="title">Selected Color:</p>
+      <p id="values"></p>
+
+    </div>
+
+  </div>
+<!-- 
+  ##############
+  ##############  
+ -->
+<div align="center" >
+  <h2>Developed for fun by O.Zeidi 
+    <a href="https://github.com/Ozeidi">GitHub</a>, 
+    <a href="http://ozeidi.io/">Blog</a> <br>
+    Inspired by the great work of "Colorful Coding" <br>
+    <a href="https://www.youtube.com/watch?v=-3HwUKsovBE&t=242s">Recursive Trees in P5</a>
+  </h2>
+</div>
+  </div>
+
+  <!-- COLOR PICKER -->
+
+  <script src='https://cdn.jsdelivr.net/npm/@jaames/iro/dist/iro.min.js'></script>
+  <script src="js/ColorPicker.js"></script>
+
+</html>
