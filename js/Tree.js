@@ -48,20 +48,24 @@ function branch(len){
     if (update == true){
         growthRate = branch_factor//random(branch_factor*min_growth, branch_factor*max_growth)
 
-        push();
+        //push();
         if (len >10){
+            
             strokeWeight(map(len,10,100,1,20));
             stroke(70,40,20);
             line(0,0,0,-len);
             translate(0, -len);
+            push();
             angle = random(min_angle, min_angle-10)//random( min_angle, min_angle-10);
             rotate(angle);
             branch(len*growthRate);
+            pop();
+            push();
             //console.log(max_angle)
             angle = random(int(max_angle), int(max_angle)+10) //random(max_angle, max_angle+10);
             rotate(angle);
             branch(len*growthRate);
-            
+            pop()
         }else{
             push();
             var r = leaf_RGB["r"] + random(-20, 20);
@@ -70,9 +74,6 @@ function branch(len){
 
             fill(r, g, b,155)
             noStroke();
-            // ellipse(0, 0, 10)
-            //min_leaf = 45;
-            //max_leaf = 135;
             beginShape()
             for (var i = min_leaf; i <max_leaf ; i++ ) {
                 var rad = 15;
@@ -90,7 +91,7 @@ function branch(len){
             endShape(CLOSE)
             pop();
         }
-        pop();
+        //pop();
     }
     
 
