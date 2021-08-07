@@ -22,7 +22,7 @@ Crating beautiful recursive tree with P5.js. This work is built upon the outstan
 1. Clone this repo to your machine.
 
 ```sh
-$ git clone https://github.com/Ozeidi/Twitter_Scraper.git
+$ git clone https://github.com/Ozeidi/Recursive-Tree.git
 ```
 2. To test the code, I highly recommend using VS Code. I use `Live Server` extension to serve the app locally.
 
