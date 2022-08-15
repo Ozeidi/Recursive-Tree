@@ -28,10 +28,6 @@ $ git clone https://github.com/Ozeidi/Recursive-Tree.git
 ```
 2. To test the code, I highly recommend using VS Code. I use `Live Server` extension to serve the app locally.
 
-
-
-## Live Demo
-- [CODEPEN](https://codepen.io/ozeidi/project/full/DGyMQJ)
 ##  Resources
 - [Colorful Coding Youtube Channel](https://www.youtube.com/channel/UCWOTJIT48V9vxKoqdQBTHnw):
 An excelent Resource for P5.JS tutorials and Generative Art.
