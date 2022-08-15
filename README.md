@@ -7,15 +7,17 @@
 ## Table of Contents
 
 - [Background](#background)
-- [Install](#install)
 - [Live Demo](#live-demo)
+- [Install](#install)
 - [Resources](#Resources)
 - [License](#license)
 
 ## Background
-
+![Screenshot](img/screenshot.png)
 Crating beautiful recursive tree with P5.js. This work is built upon the outstanding tutorial from "Colorful Coding" Youtube Channel. I highly recommend watching that tutorial [HERE](https://www.youtube.com/watch?v=-3HwUKsovBE&t=264s).
 
+## Live Demo
+- [Recursive Tree Demo](recursive-tree.netlify.app)
 
 ## Install
 

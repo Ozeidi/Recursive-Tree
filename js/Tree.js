@@ -12,6 +12,7 @@ var min_angle, max_angle;
 var min_leaf, max_leaf;
 
 function setup (){
+
   openNav();
   var myCanvas = createCanvas (windowWidth, windowHeight-300);
   myCanvas.parent("Canvas");
@@ -58,6 +59,7 @@ function branch(len){
             push();
             angle = random(min_angle, min_angle-10)//random( min_angle, min_angle-10);
             rotate(angle);
+            
             branch(len*growthRate);
             pop();
             push();
